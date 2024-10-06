@@ -1,9 +1,7 @@
 AESCrypt-Android
 ================
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AESCrypt--Android-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1686)
-
-Simple API to perform AES encryption on Android with no dependancies. This is the Android counterpart to the [AESCrypt](https://github.com/Gurpartap/aescrypt) library Ruby and [AESCrypt-ObjC](http://github.com/Gurpartap/AESCrypt-ObjC) created by [Gurpartap Singh](https://github.com/Gurpartap). It used the same *weak* :'( security defaults i.e Blank IV noted below.
+Simple API to perform AES encryption on Android with no dependancies. 
 
 For compatiblity with AESCrypt, AESCrypt-Android has the same defaults namely: 
 
@@ -11,15 +9,6 @@ For compatiblity with AESCrypt, AESCrypt-Android has the same defaults namely:
  * CBC mode
  * PKCS7Padding
  * Blank/Empty IV **(default*)** 
-
-**\*Using CBC with the default blank IV [is vulnerable](http://security.stackexchange.com/a/35216/77065). This has been left in for compatibility with AESCrypt implementations. See Adv method for providing your own IV.** If you don't need to be compatable with [AESCrypt](https://github.com/Gurpartap/aescrypt) then look at  [java-aes-crypto](https://github.com/tozny/java-aes-crypto) it's API is just as simple and generates more secure keys. 
-
-
-## Dependency
-
-[Download from Maven Central (.aar)](https://oss.sonatype.org/index.html#view-repositories;releases~browsestorage~/com/scottyab/aescrypt/0.0.1/aescrypt-0.0.1.aar)
-
-**or**
 
 ```java
 dependencies {
